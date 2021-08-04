@@ -26,14 +26,13 @@ First create the database with the name `basenegocios`
 //Import or run the database script found in
 
 project_root/backup_DB/baseNegocios.sql
-
 ```
 
 > You would create a database with any name and import it there, for this you will need to edit the `basenegocios.sql` file and remove the line that says `USE 'basenegocios';`
 
 With the database created, now in the file `project_root/application/config/database.php` put the name of the database and configure the other credentials
 ```
- //For local tests and without password and with the default name of the database, so the configuration would be
+//For local tests and without password and with the default name of the database, so the configuration would be
 
 'hostname' => 'localhost',
 'username' => 'root',
@@ -44,9 +43,8 @@ With the database created, now in the file `project_root/application/config/data
 
 Followed by the database configuration, now we must assign the path segment known as `base_url` this in` project_path / application / config / config.php`
 ```
- // Find the variable and put the path
-
-  $config['base_url'] = 'http://localhost/project_root/';
+// Find the variable and put the path
+$config['base_url'] = 'http://localhost/project_root/';
 ```
 
 This project uses the sending of emails, so so that you do not get an error for this in the files `controllers/Bartdirectoryc.php`, `controllers/Correo.php `, `controllers/Directoryc.php`, `models/Usersm` inside the file do a search for the word `configCorreo`.

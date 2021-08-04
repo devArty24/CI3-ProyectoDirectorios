@@ -61,9 +61,9 @@ $config['smtp_pass'] = ''; // email account password
 
 To use the google mail server it would look something like this:
 ```
-  $config['protocol'] = 'smtp';
-  $config['smtp_host'] = 'ssl://smtp.gmail.com'; //If it doesn't work, try this ssl://smtp.googlemail.com
-  $config['smtp_port'] = 465;
-  $config['smtp_user'] = 'cuentacorreo@gmail.com';
-  $config['smtp_pass'] = 'pass12345';
+$config['protocol'] = 'smtp';
+$config['smtp_host'] = 'ssl://smtp.gmail.com'; //If it doesn't work, try this ssl://smtp.googlemail.com
+$config['smtp_port'] = 465;
+$config['smtp_user'] = 'cuentacorreo@gmail.com';
+$config['smtp_pass'] = 'pass12345';
 ```

@@ -35,11 +35,11 @@ With the database created, now in the file `project_root/application/config/data
 ```
  //For local tests and without password and with the default name of the database, so the configuration would be
 
-   'hostname' => 'localhost',
-   'username' => 'root',
-   'password' => '',
-   'database' => 'basenegocios',
-   'dbdriver' => 'mysqli',
+'hostname' => 'localhost',
+'username' => 'root',
+'password' => '',
+'database' => 'basenegocios',
+'dbdriver' => 'mysqli',
 ```
 
 Followed by the database configuration, now we must assign the path segment known as `base_url` this in` project_path / application / config / config.php`
@@ -47,7 +47,6 @@ Followed by the database configuration, now we must assign the path segment know
  // Find the variable and put the path
 
   $config['base_url'] = 'http://localhost/project_root/';
-
 ```
 
 This project uses the sending of emails, so so that you do not get an error for this in the files `controllers/Bartdirectoryc.php`, `controllers/Correo.php `, `controllers/Directoryc.php`, `models/Usersm` inside the file do a search for the word `configCorreo`.

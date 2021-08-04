@@ -50,4 +50,20 @@ Followed by the database configuration, now we must assign the path segment know
 
 ```
 
-This project uses the sending of emails, so so that you do not get an error for this in the files `controllers/Bartdirectoryc.php`, `controllers/Correo.php `, `controllers/Directoryc.php`, `models/Usersm` inside from the file do a search for `configCorreo`
+This project uses the sending of emails, so so that you do not get an error for this in the files `controllers/Bartdirectoryc.php`, `controllers/Correo.php `, `controllers/Directoryc.php`, `models/Usersm` inside the file do a search for the word `configCorreo`.
+```
+$config['protocol'] = '';  // smtp or pop
+$config['smtp_host'] = ''; // Server to email
+$config['smtp_port'] = ;   // 465 o 587
+$config['smtp_user'] = ''; // email account that will send the emails
+$config['smtp_pass'] = ''; // email account password
+```
+
+To use the google mail server it would look something like this:
+```
+  $config['protocol'] = 'smtp';
+  $config['smtp_host'] = 'ssl://smtp.gmail.com'; //If it doesn't work, try this ssl://smtp.googlemail.com
+  $config['smtp_port'] = 465;
+  $config['smtp_user'] = 'cuentacorreo@gmail.com';
+  $config['smtp_pass'] = 'pass12345';
+```

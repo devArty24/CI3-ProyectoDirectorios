@@ -64,3 +64,9 @@ $config['smtp_port'] = 465;
 $config['smtp_user'] = 'cuentacorreo@gmail.com';
 $config['smtp_pass'] = 'pass12345';
 ```
+
+Finally you can start testing the project with the path more or less like this
+```
+//The important part to be able to visualize the beginning of the project is the controller (bartdirectoryc), that is, it can vary the localhost and the name of the root folder of the project
+http://localhost/CI3-ProyectoDirectorios-master/bartdirectoryc
+```
